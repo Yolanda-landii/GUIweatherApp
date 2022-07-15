@@ -19,10 +19,10 @@ city_value=StringVar()
 '''This function displays the weather'''
 def display_weather():
     #the api key from the OpenWeatherMap dashboard
-    api_key= "b88de5a8b401de899d97e67c091d94b0"
+    api_key= "yourCopiedapikey"
     #get city name from the user form code later in the code
     city_name = city_value.get()
-    weather_url = "https://openweathermap.org/api" + city_name + '&appid' +api_key
+    weather_url = "https://openweathermap.org/" + city_name + '&appid' +api_key
     #get the response from the fetched url
     response = requests.get(weather_url)
     #here we are changing the json response to python readable
